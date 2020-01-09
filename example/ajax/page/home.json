@@ -1,0 +1,15 @@
+{
+  "version": 1,
+  "build": [
+    "wrapper"
+  ],
+  "components": {
+    "wrapper": {
+      "type": "button",
+      "elevation": 0,
+      "color": "primary",
+      "size": "l",
+      "text": "Click me"
+    }
+  }
+}

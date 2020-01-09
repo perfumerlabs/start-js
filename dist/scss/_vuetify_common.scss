@@ -1,0 +1,57 @@
+::placeholder {
+  color: #A6AEBC !important;
+}
+
+.v-btn:not(.v-btn--round).v-size--large {
+  height: 48px;
+}
+
+.v-menu__content[role="menu"] {
+  max-height: 95%;
+}
+
+.v-btn {
+  border-radius: 8px;
+  letter-spacing: normal;
+}
+
+.v-card:not(.v-sheet--tile):not(.v-card--shaped) {
+  border-radius: 8px;
+}
+
+.v-image .v-overlay--active {
+  touch-action: auto;
+}
+
+.v-card__title {
+  word-break: break-word;
+}
+
+.v-text-field--solo, .v-text-field--outlined {
+  border-radius: 8px;
+}
+
+.v-text-field--outlined.v-input--is-focused fieldset, .v-text-field--outlined.v-input--has-state fieldset {
+  border-color: currentColor;
+}
+
+.theme--light.v-text-field--outlined.error--text fieldset {
+  border-color: currentColor;
+}
+
+.v-chip.v-size--small {
+  height: 2em;
+  border-radius: 2em;
+}
+
+.v-stepper {
+  box-shadow: none;
+
+  &[outlined] {
+    border: 1px solid currentColor;
+  }
+}
+
+table {
+  width: 100%;
+}

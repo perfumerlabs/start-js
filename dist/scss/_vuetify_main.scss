@@ -1,0 +1,39 @@
+@import 'variables';
+
+$body-font-family: $main-font;
+@import "~vuetify/src/styles/main";
+
+@import "./_vuetify_common.scss";
+html, body {
+  color: #0A1F44;
+}
+
+.theme--light {
+  &.v-card {
+    color: #0A1F44;
+  }
+  &.v-icon {
+    color: #0A1F44;
+  }
+}
+
+.theme--light.v-card.v-card--outlined {
+  border-color: #E1E4E8;
+}
+
+.theme--light.v-text-field--outlined fieldset {
+  border-color: #E1E4E8;
+}
+
+.theme--light.v-label {
+  color: #8A94A6;
+}
+
+.v-stepper,
+.page-container-inner {
+  color: #ccc;
+  & > * {
+    color: #0A1F44;
+  }
+
+}
