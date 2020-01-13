@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import Vuex from "vuex";
-import themes from "./themes";
+import themes from "../dist/configs/themes";
 
 Vue.use(Vuex);
 

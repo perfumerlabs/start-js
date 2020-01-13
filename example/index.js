@@ -3,7 +3,7 @@ import App from './App.vue';
 import router from '../dist/router';
 import vuetify from '../dist/configs/vuetify';
 import Storage from '../dist/configs/storage';
-import store from '../dist/configs/store';
+import store from './store';
 
 import "../dist/scss/_vuetify_main.scss";
 import StartComponent from "../dist/components/StartComponent";
