@@ -7,7 +7,9 @@
                         class="page-container page-breadcrumbs"
                         :style="getPageBlocksStyle()"
                 >
-                    <start-breadcrumbs :$page="$page" :config="breadcrumbs"></start-breadcrumbs>
+                    <component :is="customBreadcrumbs" v-if="customBreadcrumbs" :$page="$page"
+                               :config="breadcrumbs"></component>
+                    <start-breadcrumbs v-else :$page="$page" :config="breadcrumbs"></start-breadcrumbs>
                 </div>
 
                 <div v-if="menu.length > 0" class="page-container page-submenu" :style="getPageBlocksStyle()">
@@ -224,11 +226,14 @@
         name: "Page",
         extends: Base,
         props: {
-
             sidebarOpen: {
                 type: Boolean,
                 default: false
             },
+            customBreadcrumbs: {
+                type: Object,
+                default: null
+            }
         },
         vuetify: vuetify,
         components: components,
