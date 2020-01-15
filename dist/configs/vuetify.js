@@ -1,8 +1,13 @@
 import Vuetify from 'vuetify/lib';
-import Theme from './themes'
+import settings from './settings'
 import Vue from "vue";
 
 Vue.use(Vuetify);
+
+let theme = settings.instance.themes[settings.instance.theme_name]
+if (!theme || !theme.vuetify) {
+    theme = settings.instance.themes["_default"]
+}
 
 export default new Vuetify({
     icons: {
@@ -10,8 +15,8 @@ export default new Vuetify({
     },
     theme: {
         themes: {
-            light: Theme[window.config.theme].vuetify,
-            dark: Theme[window.config.theme].vuetify
+            light: theme.vuetify,
+            dark: theme.vuetify,
         },
     },
 });

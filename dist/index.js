@@ -1,7 +1,7 @@
 'use strict';
 import Page from "./Page";
 import router from "./router";
-import themes from './configs/themes';
+import settings from './configs/settings';
 
 let exports = {};
 
@@ -9,6 +9,6 @@ exports.Page = Page;
 
 exports.router = router;
 
-exports.themes = themes;
+exports.settings = settings;
 
 export default exports;
