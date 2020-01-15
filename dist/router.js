@@ -1,10 +1,6 @@
-import Vue from 'vue'
-import VueRouter from 'vue-router'
 import Page from './Page'
 
-Vue.use(VueRouter);
-
-const router = new VueRouter({
+const router = {
     routes: [
         {path: '/page/:vendor/:page_name(.*)', component: Page, props: true},
         {path: '*', component: Page, props: true},
@@ -13,6 +9,6 @@ const router = new VueRouter({
     scrollBehavior(to, from, savedPosition) {
         window.$scroll_position = savedPosition;
     }
-});
+}
 
 export default router
